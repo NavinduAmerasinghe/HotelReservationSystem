@@ -1,4 +1,4 @@
-const router = require("router").Router();
+const router = require("express").Router();
 const Hotel = require("../models/hotelModel");
 
 //@desc   GET all products from db
