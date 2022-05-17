@@ -8,6 +8,8 @@ require("dotenv").config();
 //importing Routes
 const userRoutes = required("./routes/userRoutes.js");
 const hotelRoutes = required("./routes/hotelRoutes.js");
+const paymentRoutes = required("./routes/paymentRoutes.js");
+const reservationRoutes = required("./routes/reservationRoutes.js");
 
 const port = process.env.PORT || 9000;
 const app = express();
@@ -26,8 +28,10 @@ mongoose
   });
 
 //routes middlware
-app.use("api/users", userRoutes); //user service interface
-app.use("api/hotels", hotelRoutes); //hotel service interface
+app.use("/api/users", userRoutes); //user service interface
+app.use("/api/hotels", hotelRoutes); //hotel service interface
+app.use("/api/payment", paymentRoutes); //payment service Interface
+app.use("/api/reservation", reservationRoutes); //reservation service Interface
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
