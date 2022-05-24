@@ -1,7 +1,7 @@
 const router = require("express").Router();
 let Payment = require("../models/paymentModel");
 var nodemailer = require("nodemailer");
-const vonage = require("@vonage/server-sdk");
+const Vonage = require("@vonage/server-sdk");
 
 const vonage = new Vonage({
   //initializing the SMS service (non-paid version)

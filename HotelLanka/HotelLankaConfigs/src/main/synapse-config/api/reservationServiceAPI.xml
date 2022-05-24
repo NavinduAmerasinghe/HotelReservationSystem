@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/reservations" name="reservationServiceAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="DELETE POST PUT PATCH GET">
+        <inSequence>
+            <log>
+                <property name="message" value="Welcome to Hotel Lanka reservation Service"/>
+            </log>
+            <send>
+                <endpoint key="reservationServiceEndpoint"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
