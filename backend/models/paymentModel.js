@@ -1,12 +1,11 @@
 const mongoose = require("mongoose");
 const schema = mongoose.Schema;
 
-const paymentSchema = new Schema(
+const paymentSchema = new schema(
   {
-    itemName: { type: String, requires: false },
+    hotelName: { type: String, requires: false },
     userID: { type: String, required: false },
     userMail: { type: String, required: false },
-    noOfItems: { type: Number, required: false }, //make this optional
     noofRooms: { type: Number, required: false },
     NIC: { type: Number, required: false },
     PhoneNumber: { type: Number, required: false },
@@ -25,4 +24,4 @@ const paymentSchema = new Schema(
 );
 
 const Payment = mongoose.model("Payment", paymentSchema);
-module.export = Payment;
+module.exports = Payment;
