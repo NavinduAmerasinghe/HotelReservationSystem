@@ -1,42 +1,87 @@
-Installation Steps
+# 🏨 HotelReservationSystem – Full Stack Hotel Management Platform
 
-1.Open the folder using VS code
-	- there should be 3 folders inside called frontend , backend & hotelLanka
-  
-2.Open two terminals and go inside frontend & backend using each terminal
-	- command --> cd frontend
-	          --> cd backend
-			  
-3.In each terminal type following command respectively t0 install node modules
-	- command --> npm install
-	
-4.Install 'Moesif Origin & CORS changer' extension to the Chrom browser using chrome web store
+![Java](https://img.shields.io/badge/Backend-Java-blue)
+![Frontend](https://img.shields.io/badge/Frontend-Web%20UI-green)
+![Integration](https://img.shields.io/badge/Integration-WSO2-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-5.Open your WSO2 integration studio
+---
 
-6.Import the project folder (hotelLanka)
+## 📌 Overview
+**HotelReservationSystem** is a full-stack hotel reservation and management platform designed to handle booking operations, system configurations, and service integrations.
 
-7.Open Windows => Show view => Other => Server => Servers
+The system integrates a **frontend UI, backend services, and WSO2 Enterprise Integrator**, demonstrating a modular and scalable architecture suitable for enterprise-level applications.
 
-8.Create a new server according to the labsheet
+---
 
-9.Select WSO2 enterprise integrator 6.6.0 and set the carbon Home and click ‘Next’
+## 🎯 Purpose
+The goal of this project is to provide a centralized system for managing hotel reservations and operations, enabling:
 
-10.Add project as configured
+- Efficient booking and reservation handling  
+- Integration of backend services via WSO2  
+- Scalable and modular system architecture  
+- Real-time interaction between frontend and backend  
 
-11.Finish creating the server
+---
 
-12.Right click on the newly created server and click start
+## 🏗️ Architecture
 
-13.Log into the WSO2 management console providing username and password both as ‘admin’
+- **Frontend** → Web interface for users  
+- **Backend** → Handles business logic and processing  
+- **WSO2 EI** → Middleware for service integration and API orchestration  
 
-14.Click on the  API’s and copy the path without the context (Ex: http://192.168.8.183:8280)
+---
 
-15.Open the VS Code and open web => src => utils => hostAddress.js and paste the above copied     ip address and assign it to the constant variable called ‘ip’ 
+## 📁 Project Structure
+HotelReservationSystem/
+│── HotelLanka/ # WSO2 integration project
+│── backend/ # Backend services
+│── frontend/ # Frontend application
+│── members.txt # Contributors
+│── readme.txt # Original documentation
 
-16. Then type following command in the terminals opened in the step 3
-			Command --> npm start
+---
 
-17.Then you should see both backend and frontend up and running. 
+## ⚙️ Features
 
-18.Open the chrome browser and type “ http://localhost:3000/ “ , you should see the landing page of Hotel.lk
+- ✅ Hotel reservation and booking management  
+- ✅ Full-stack integration (Frontend + Backend)  
+- ✅ Middleware integration using WSO2  
+- ✅ Configurable system endpoints  
+- ✅ Modular and scalable design  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technology                      |
+|----------------|--------------------------------|
+| Backend        | Java                           |
+| Frontend       | JavaScript / Web UI            |
+| Integration    | WSO2 Enterprise Integrator 6.6 |
+| Build Tool     | Maven                          |
+| Tools          | VS Code, Chrome Extensions     |
+
+---
+
+## 🚀 Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Open Project
+- Open the project folder using **VS Code**
+- Ensure the following folders exist:
+frontend/
+backend/
+HotelLanka/
+
+---
+
+### 2️⃣ Open Terminals
+- Open **two terminals** in VS Code:
+- Terminal 1 → `frontend`
+- Terminal 2 → `backend`
+
+```bash
+cd frontend
+cd backend
